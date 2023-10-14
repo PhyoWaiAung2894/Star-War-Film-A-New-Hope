@@ -19,6 +19,8 @@
 		4634327A2AD88515001F0C81 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463432792AD88515001F0C81 /* DetailViewController.swift */; };
 		4634327C2AD89436001F0C81 /* StarShipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4634327B2AD89436001F0C81 /* StarShipModel.swift */; };
 		463432822AD93402001F0C81 /* StarShipDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463432812AD93402001F0C81 /* StarShipDetailViewController.swift */; };
+		46E286BB2ADA8BBA000115AE /* URLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E286BA2ADA8BBA000115AE /* URLS.swift */; };
+		46E286BE2ADA8C4A000115AE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E286BD2ADA8C4A000115AE /* Utils.swift */; };
 		87A37BB313D39D9DE20A51E2 /* Pods_Star_War_Film_A_New_Hope_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06894D10B3E6095B54B7F58D /* Pods_Star_War_Film_A_New_Hope_.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		463432792AD88515001F0C81 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4634327B2AD89436001F0C81 /* StarShipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShipModel.swift; sourceTree = "<group>"; };
 		463432812AD93402001F0C81 /* StarShipDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShipDetailViewController.swift; sourceTree = "<group>"; };
+		46E286BA2ADA8BBA000115AE /* URLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLS.swift; sourceTree = "<group>"; };
+		46E286BD2ADA8C4A000115AE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		C3F37A03F86E561D0F51A1D1 /* Pods-Star War Film(A New Hope).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Star War Film(A New Hope).release.xcconfig"; path = "Target Support Files/Pods-Star War Film(A New Hope)/Pods-Star War Film(A New Hope).release.xcconfig"; sourceTree = "<group>"; };
 		EFC840605E7FE3F3DC62942D /* Pods-Star War Film(A New Hope).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Star War Film(A New Hope).debug.xcconfig"; path = "Target Support Files/Pods-Star War Film(A New Hope)/Pods-Star War Film(A New Hope).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +122,8 @@
 		463432762AD864B2001F0C81 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				46E286BA2ADA8BBA000115AE /* URLS.swift */,
+				46E286BD2ADA8C4A000115AE /* Utils.swift */,
 				4634326E2AD81F5E001F0C81 /* StarWarFilmsModel.swift */,
 				4634327B2AD89436001F0C81 /* StarShipModel.swift */,
 			);
@@ -250,9 +256,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				463432822AD93402001F0C81 /* StarShipDetailViewController.swift in Sources */,
+				46E286BB2ADA8BBA000115AE /* URLS.swift in Sources */,
 				4634327A2AD88515001F0C81 /* DetailViewController.swift in Sources */,
 				4634327C2AD89436001F0C81 /* StarShipModel.swift in Sources */,
 				4634326F2AD81F5E001F0C81 /* StarWarFilmsModel.swift in Sources */,
+				46E286BE2ADA8C4A000115AE /* Utils.swift in Sources */,
 				4634325D2AD80F14001F0C81 /* FilmViewController.swift in Sources */,
 				463432592AD80F14001F0C81 /* AppDelegate.swift in Sources */,
 				4634325B2AD80F14001F0C81 /* SceneDelegate.swift in Sources */,
@@ -412,6 +420,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,6 +450,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,10 +1,12 @@
 
 import UIKit
 import Alamofire
+import MBProgressHUD
 
 class FilmViewController: UITableViewController {
     
     var films = [Film]()
+    let dispatchGroup = DispatchGroup()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,20 +17,37 @@ class FilmViewController: UITableViewController {
         
         tableView.register(UINib(nibName: "FilmTableViewCell", bundle:nil), forCellReuseIdentifier: "ResuableCell")
         
-        for filmNumber in 1...5 {
-            let filmURL = getFilmURL(for: filmNumber)
-            
+        getFilms()
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        
+    }
+    
+    func getFilms(){
+        let totalFilmsUrl: [URL] = Utils.getTotalFilmUrls()
+        
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        for filmURL in totalFilmsUrl {
+            dispatchGroup.enter()
             AF.request(filmURL, method: .get).responseDecodable(of: Film.self) { response in
                 switch response.result {
                 case .success(let film):
                     self.films.append(film)
-                    self.tableView.reloadData()
+                    self.dispatchGroup.leave();
                 case .failure(let error):
                     print("Error fetching film data from API URL \(error)")
+                    self.dispatchGroup.leave();
                 }
             }
         }
         
+        dispatchGroup.notify(queue: .main) { [weak self] in
+            guard let self = self else { return }
+            MBProgressHUD.hide(for: self.view, animated: true)
+            self.tableView.reloadData()
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -9,6 +9,8 @@ class DetailViewController: UIViewController {
     var StarShip: [String]?
     var filmName: String?
     
+    var dispatchGroup = DispatchGroup()
+    
     @IBOutlet var director_Name: UILabel!
         
     @IBOutlet var shortDescription: UITextView!
@@ -29,17 +31,21 @@ class DetailViewController: UIViewController {
         
         if let starships = StarShip {
             for starship in starships {
-                
+                dispatchGroup.enter()
                 
                 AF.request(starship as URLConvertible, method: .get).responseDecodable(of: StarShipModel.self) { response in
                     switch response.result {
                     case .success(let starshipdetail):
                         self.StarShips.append(starshipdetail)
-                        self.tableview.reloadData()
+                        self.dispatchGroup.leave()
                     case .failure(let error):
                         print("Error fetching starship data from API URl \(error)")
+                        self.dispatchGroup.leave()
                     }
                 }
+            }
+            dispatchGroup.notify(queue: .main) { [weak self] in
+                self?.tableview.reloadData()
             }
         }
       }
@@ -61,7 +67,7 @@ extension DetailViewController: UITableViewDataSource{
         
         cell.textLabel?.textColor = UIColor.white
         cell.textLabel?.text = StarShips[indexPath.row].name
-        cell.accessoryType = .detailDisclosureButton
+        cell.accessoryType = .detailButton
         
         return cell
     }
