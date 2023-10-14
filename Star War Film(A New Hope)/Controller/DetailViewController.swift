@@ -1,5 +1,6 @@
 import UIKit
 import Alamofire
+import MBProgressHUD
 
 class DetailViewController: UIViewController {
 
@@ -28,7 +29,14 @@ class DetailViewController: UIViewController {
         
         director_Name.text = "Director \(directorName ?? "None")"
         shortDescription.text = openingCrawl
+      
+        fetchStarShips()
         
+      }
+    
+    func fetchStarShips(){
+        
+        MBProgressHUD.showAdded(to: self.tableview, animated: true)
         if let starships = StarShip {
             for starship in starships {
                 dispatchGroup.enter()
@@ -45,12 +53,12 @@ class DetailViewController: UIViewController {
                 }
             }
             dispatchGroup.notify(queue: .main) { [weak self] in
-                self?.tableview.reloadData()
+                guard let self = self else { return }
+                MBProgressHUD.hide(for: self.tableview, animated: true)
+                self.tableview.reloadData()
             }
         }
-      }
-    
-     
+    }
 }
 
 //MARK: - TableView DataSource
