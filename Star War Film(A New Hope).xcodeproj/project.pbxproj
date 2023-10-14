@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		463432592AD80F14001F0C81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463432582AD80F14001F0C81 /* AppDelegate.swift */; };
+		4634325B2AD80F14001F0C81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4634325A2AD80F14001F0C81 /* SceneDelegate.swift */; };
+		4634325D2AD80F14001F0C81 /* FilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4634325C2AD80F14001F0C81 /* FilmViewController.swift */; };
+		463432602AD80F14001F0C81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4634325E2AD80F14001F0C81 /* Main.storyboard */; };
+		463432622AD80F16001F0C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 463432612AD80F16001F0C81 /* Assets.xcassets */; };
+		463432652AD80F16001F0C81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463432632AD80F16001F0C81 /* LaunchScreen.storyboard */; };
+		4634326F2AD81F5E001F0C81 /* StarWarFilmsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4634326E2AD81F5E001F0C81 /* StarWarFilmsModel.swift */; };
+		463432732AD85E6E001F0C81 /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463432712AD85E6E001F0C81 /* FilmTableViewCell.swift */; };
+		463432742AD85E6E001F0C81 /* FilmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 463432722AD85E6E001F0C81 /* FilmTableViewCell.xib */; };
+		4634327A2AD88515001F0C81 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463432792AD88515001F0C81 /* DetailViewController.swift */; };
+		4634327C2AD89436001F0C81 /* StarShipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4634327B2AD89436001F0C81 /* StarShipModel.swift */; };
+		463432822AD93402001F0C81 /* StarShipDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463432812AD93402001F0C81 /* StarShipDetailViewController.swift */; };
+		87A37BB313D39D9DE20A51E2 /* Pods_Star_War_Film_A_New_Hope_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06894D10B3E6095B54B7F58D /* Pods_Star_War_Film_A_New_Hope_.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06894D10B3E6095B54B7F58D /* Pods_Star_War_Film_A_New_Hope_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Star_War_Film_A_New_Hope_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		463432552AD80F14001F0C81 /* Star War Film(A New Hope).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star War Film(A New Hope).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		463432582AD80F14001F0C81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4634325A2AD80F14001F0C81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4634325C2AD80F14001F0C81 /* FilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewController.swift; sourceTree = "<group>"; };
+		4634325F2AD80F14001F0C81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		463432612AD80F16001F0C81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		463432642AD80F16001F0C81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		463432662AD80F16001F0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4634326E2AD81F5E001F0C81 /* StarWarFilmsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarFilmsModel.swift; sourceTree = "<group>"; };
+		463432712AD85E6E001F0C81 /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
+		463432722AD85E6E001F0C81 /* FilmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmTableViewCell.xib; sourceTree = "<group>"; };
+		463432792AD88515001F0C81 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4634327B2AD89436001F0C81 /* StarShipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShipModel.swift; sourceTree = "<group>"; };
+		463432812AD93402001F0C81 /* StarShipDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShipDetailViewController.swift; sourceTree = "<group>"; };
+		C3F37A03F86E561D0F51A1D1 /* Pods-Star War Film(A New Hope).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Star War Film(A New Hope).release.xcconfig"; path = "Target Support Files/Pods-Star War Film(A New Hope)/Pods-Star War Film(A New Hope).release.xcconfig"; sourceTree = "<group>"; };
+		EFC840605E7FE3F3DC62942D /* Pods-Star War Film(A New Hope).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Star War Film(A New Hope).debug.xcconfig"; path = "Target Support Files/Pods-Star War Film(A New Hope)/Pods-Star War Film(A New Hope).debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		463432522AD80F14001F0C81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87A37BB313D39D9DE20A51E2 /* Pods_Star_War_Film_A_New_Hope_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08493503DD8ABD419F4572A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06894D10B3E6095B54B7F58D /* Pods_Star_War_Film_A_New_Hope_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4634324C2AD80F14001F0C81 = {
+			isa = PBXGroup;
+			children = (
+				463432572AD80F14001F0C81 /* Star War Film(A New Hope) */,
+				463432562AD80F14001F0C81 /* Products */,
+				C51333F1D4E4AB7BFCBB1CB0 /* Pods */,
+				08493503DD8ABD419F4572A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		463432562AD80F14001F0C81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				463432552AD80F14001F0C81 /* Star War Film(A New Hope).app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		463432572AD80F14001F0C81 /* Star War Film(A New Hope) */ = {
+			isa = PBXGroup;
+			children = (
+				463432582AD80F14001F0C81 /* AppDelegate.swift */,
+				4634325A2AD80F14001F0C81 /* SceneDelegate.swift */,
+				463432762AD864B2001F0C81 /* Model */,
+				463432702AD85E22001F0C81 /* View */,
+				463432752AD864A6001F0C81 /* Controller */,
+				463432612AD80F16001F0C81 /* Assets.xcassets */,
+				463432632AD80F16001F0C81 /* LaunchScreen.storyboard */,
+				463432662AD80F16001F0C81 /* Info.plist */,
+			);
+			path = "Star War Film(A New Hope)";
+			sourceTree = "<group>";
+		};
+		463432702AD85E22001F0C81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4634325E2AD80F14001F0C81 /* Main.storyboard */,
+				463432712AD85E6E001F0C81 /* FilmTableViewCell.swift */,
+				463432722AD85E6E001F0C81 /* FilmTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		463432752AD864A6001F0C81 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4634325C2AD80F14001F0C81 /* FilmViewController.swift */,
+				463432792AD88515001F0C81 /* DetailViewController.swift */,
+				463432812AD93402001F0C81 /* StarShipDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		463432762AD864B2001F0C81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4634326E2AD81F5E001F0C81 /* StarWarFilmsModel.swift */,
+				4634327B2AD89436001F0C81 /* StarShipModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C51333F1D4E4AB7BFCBB1CB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFC840605E7FE3F3DC62942D /* Pods-Star War Film(A New Hope).debug.xcconfig */,
+				C3F37A03F86E561D0F51A1D1 /* Pods-Star War Film(A New Hope).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		463432542AD80F14001F0C81 /* Star War Film(A New Hope) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 463432692AD80F16001F0C81 /* Build configuration list for PBXNativeTarget "Star War Film(A New Hope)" */;
+			buildPhases = (
+				AE1DC0AC3667479E0F9D4414 /* [CP] Check Pods Manifest.lock */,
+				463432512AD80F14001F0C81 /* Sources */,
+				463432522AD80F14001F0C81 /* Frameworks */,
+				463432532AD80F14001F0C81 /* Resources */,
+				3CCC81E9D71C27C30899A8E8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Star War Film(A New Hope)";
+			productName = "Star War Film(A New Hope)";
+			productReference = 463432552AD80F14001F0C81 /* Star War Film(A New Hope).app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4634324D2AD80F14001F0C81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					463432542AD80F14001F0C81 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 463432502AD80F14001F0C81 /* Build configuration list for PBXProject "Star War Film(A New Hope)" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4634324C2AD80F14001F0C81;
+			productRefGroup = 463432562AD80F14001F0C81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				463432542AD80F14001F0C81 /* Star War Film(A New Hope) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		463432532AD80F14001F0C81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463432652AD80F16001F0C81 /* LaunchScreen.storyboard in Resources */,
+				463432742AD85E6E001F0C81 /* FilmTableViewCell.xib in Resources */,
+				463432622AD80F16001F0C81 /* Assets.xcassets in Resources */,
+				463432602AD80F14001F0C81 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CCC81E9D71C27C30899A8E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Star War Film(A New Hope)/Pods-Star War Film(A New Hope)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Star War Film(A New Hope)/Pods-Star War Film(A New Hope)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Star War Film(A New Hope)/Pods-Star War Film(A New Hope)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE1DC0AC3667479E0F9D4414 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Star War Film(A New Hope)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		463432512AD80F14001F0C81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463432822AD93402001F0C81 /* StarShipDetailViewController.swift in Sources */,
+				4634327A2AD88515001F0C81 /* DetailViewController.swift in Sources */,
+				4634327C2AD89436001F0C81 /* StarShipModel.swift in Sources */,
+				4634326F2AD81F5E001F0C81 /* StarWarFilmsModel.swift in Sources */,
+				4634325D2AD80F14001F0C81 /* FilmViewController.swift in Sources */,
+				463432592AD80F14001F0C81 /* AppDelegate.swift in Sources */,
+				4634325B2AD80F14001F0C81 /* SceneDelegate.swift in Sources */,
+				463432732AD85E6E001F0C81 /* FilmTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4634325E2AD80F14001F0C81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4634325F2AD80F14001F0C81 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		463432632AD80F16001F0C81 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				463432642AD80F16001F0C81 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		463432672AD80F16001F0C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		463432682AD80F16001F0C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4634326A2AD80F16001F0C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC840605E7FE3F3DC62942D /* Pods-Star War Film(A New Hope).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZCB89Y6U9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Star War Film(A New Hope)/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.PhyoWai.Star-War-Film-A-New-Hope-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4634326B2AD80F16001F0C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3F37A03F86E561D0F51A1D1 /* Pods-Star War Film(A New Hope).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZCB89Y6U9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Star War Film(A New Hope)/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.PhyoWai.Star-War-Film-A-New-Hope-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		463432502AD80F14001F0C81 /* Build configuration list for PBXProject "Star War Film(A New Hope)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463432672AD80F16001F0C81 /* Debug */,
+				463432682AD80F16001F0C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		463432692AD80F16001F0C81 /* Build configuration list for PBXNativeTarget "Star War Film(A New Hope)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4634326A2AD80F16001F0C81 /* Debug */,
+				4634326B2AD80F16001F0C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4634324D2AD80F14001F0C81 /* Project object */;
+}
