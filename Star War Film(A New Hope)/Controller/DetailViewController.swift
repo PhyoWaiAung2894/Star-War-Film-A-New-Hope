@@ -4,7 +4,7 @@ import MBProgressHUD
 
 class DetailViewController: UIViewController {
 
-    var StarShips = [StarShipModel]()
+    var StarShipList = [StarShipModel]()
     var directorName: String?
     var openingCrawl: String?
     var StarShip: [String]?
@@ -30,21 +30,21 @@ class DetailViewController: UIViewController {
         director_Name.text = "Director \(directorName ?? "None")"
         shortDescription.text = openingCrawl
       
-        fetchStarShips()
+        fetchStarShipList()
         
       }
     
-    func fetchStarShips(){
+    func fetchStarShipList(){
         
         MBProgressHUD.showAdded(to: self.tableview, animated: true)
-        if let starships = StarShip {
-            for starship in starships {
+        if let StarShipList = StarShip {
+            for starship in StarShipList {
                 dispatchGroup.enter()
                 
                 AF.request(starship as URLConvertible, method: .get).responseDecodable(of: StarShipModel.self) { response in
                     switch response.result {
                     case .success(let starshipdetail):
-                        self.StarShips.append(starshipdetail)
+                        self.StarShipList.append(starshipdetail)
                         self.dispatchGroup.leave()
                     case .failure(let error):
                         print("Error fetching starship data from API URl \(error)")
@@ -67,14 +67,14 @@ class DetailViewController: UIViewController {
 extension DetailViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        StarShips.count
+        StarShipList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DetailCellView", for: indexPath)
         
         cell.textLabel?.textColor = UIColor.white
-        cell.textLabel?.text = StarShips[indexPath.row].name
+        cell.textLabel?.text = StarShipList[indexPath.row].name
         cell.accessoryType = .detailButton
         
         return cell
@@ -84,10 +84,20 @@ extension DetailViewController: UITableViewDataSource{
 //MARK: - TableView Delegate
 
 extension DetailViewController: UITableViewDelegate {
+    
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(identifier: "starshipDetail") as? StarShipDetailViewController {
+       performSegue(withIdentifier: "goToStarShipDetail", sender: self)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let vc = segue.destination as! StarShipDetailViewController
+        
+        if let indexPath = tableview.indexPathForSelectedRow {
             
-                let starship = StarShips[indexPath.row]
+             let starship = StarShipList[indexPath.row]
+                
                 vc.starship_name = starship.name
                 vc.starship_model = starship.model
                 vc.starship_manufacture = starship.manufacturer
@@ -101,11 +111,10 @@ extension DetailViewController: UITableViewDelegate {
                 vc.starship_hyperdriveratiing = starship.hyperdrive_rating
                 vc.starship_mglt = starship.MGLT
                 vc.starship_class = starship.starship_class
-                
-                navigationController?.pushViewController(vc, animated: true)
-            }
-        
-        
+            
+        }
     }
+    
+  
 
 }
