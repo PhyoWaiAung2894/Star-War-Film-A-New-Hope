@@ -21,10 +21,6 @@ class FilmViewController: UITableViewController {
         
     }
     
-    override func viewDidLayoutSubviews() {
-        
-    }
-    
     func getFilms(){
         let totalFilmsUrl: [URL] = Utils.getTotalFilmUrls()
         
