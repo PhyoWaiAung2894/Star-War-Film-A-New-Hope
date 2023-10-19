@@ -7,6 +7,8 @@ class FilmViewController: UITableViewController {
     
     var filmModle : StarWarFilmModel?
     
+    var dispatchGroup = DispatchGroup()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -24,16 +26,28 @@ class FilmViewController: UITableViewController {
         
         let filmURL = "https://swapi.dev/api/films/"
         
+        MBProgressHUD.showAdded(to: self.tableView, animated: true)
+        
+        dispatchGroup.enter()
+        
         AF.request(filmURL, method: .get).responseDecodable(of: StarWarFilmModel.self){ response in
             switch response.result {
             case .success(let data):
                 self.filmModle = data
-                self.tableView.reloadData()
+                self.dispatchGroup.leave()
             case .failure(let error):
                 print(error)
+                self.dispatchGroup.leave()
             }
         }
+        
+        dispatchGroup.notify(queue: .main) { [weak self] in
+            guard let self = self else { return }
+            MBProgressHUD.hide(for: self.tableView, animated: true)
+            self.tableView.reloadData()
+        }
     }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filmModle?.results.count ?? 0
